@@ -1,0 +1,93 @@
+/* Fuentes del proyecto */
+/* Cabecera y overlay */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+
+/* Trivial */
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+/* font-family: 'Sevillana', cursive; */
+
+/* Texto general */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+/* font-family: 'Comfortaa', sans-serif; */
+
+/* Reseteo de estilos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3, h4, h5, h6, a, label, span, p, button {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Variables */
+  :root {
+    /* Colors */
+    --mgc-color-001: white;
+    --mgc-color-002: #a7a7a7;
+    --mgc-color-003: #4f4f4f;
+    --mgc-color-004: #171717;
+    
+    /* Colors trivial */
+    --mgc-color-005: #00003c;
+    --mgc-color-006: #cc6900;
+
+    --mgc-white: var(--mgc-color-001);
+    --mgc-light-grey: var(--mgc-color-002);
+    --mgc-dark-grey: var(--mgc-color-003);
+    --mgc-nearly-black: var(--mgc-color-004);
+    --mgc-dark-blue: var(--mcg-color-005);
+    --mgc-orange: var(--mgc-color-006);
+    
+  
+    /* Margins */
+    --mgc-margin-xs: 2px;
+    --mgc-margin-s: 5px;
+    --mgc-margin-m: 10px;
+    --mgc-margin-l: 20px;
+    --mgc-margin-xl: 40px;
+  
+    /* Paddings */
+    --mgc-padding-xs: 2px;
+    --mgc-padding-s: 5px;
+    --mgc-padding-m: 10px;
+    --mgc-padding-l: 20px;
+    --mgc-padding-xl: 40px;
+  
+    /* Gaps */
+    --mgc-gap-xs: 2px;
+    --mgc-gap-s: 5px;
+    --mgc-gap-m: 10px;
+    --mgc-gap-l: 20px;
+    --mgc-gap-xl: 40px;
+  
+    /* Border radius */
+    --mgc-radius-xs: 2px;
+    --mgc-radius-s: 5px;
+    --mgc-radius-m: 10px;
+    --mgc-radius-l: 20px;
+    --mgc-radius-xl: 40px;
+
+    /* Fonts */
+    --mgc-normal-text: 'Comfortaa', sans-serif;
+    --mgc-trivial-text:  'Sevillana', cursive;
+    --mgc-funny-text: 'Luckiest Guy', cursive;
+  
+    /* Font sizes */
+    --mgc-font-size-sm: clamp(0.7rem, 0.17vw + 0.66rem, 0.89rem);
+    --mgc-font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+    --mgc-font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+    --mgc-font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+    --mgc-font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+    --mgc-font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+    --mgc-font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    
+  }
