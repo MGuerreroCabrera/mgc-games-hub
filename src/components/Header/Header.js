@@ -1,20 +1,7 @@
+import { navElements } from "../../../data/header/dataHeader";
 import "./Header.css";
 
-const navElements = [
-    {
-        name: "Trivial",
-        path: "#"
-    },
-    {
-        name: "Tres en Raya",
-        path: "#"
-    },
-    {
-        name: "Memory Game",
-        path: "#"
-    }
-];
-
+// Crear la función que devuelve el header
 export const Header = () => {
 
     // Crear elemento HTML header

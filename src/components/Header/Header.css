@@ -19,10 +19,6 @@
     gap: var(--mgc-gap-xl);
 }
 
-#app-header > ul > li {
-    /* width: 20%;     */
-}
-
 #app-header > ul > li > a {
     font-family: var(--mgc-funny-text);
     font-size: var(--mgc-font-size-lg);

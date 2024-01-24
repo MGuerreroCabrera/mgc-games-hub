@@ -89,5 +89,19 @@
     --mgc-font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
     --mgc-font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
     --mgc-font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+    --mgc-font-size-ultra: clamp(3.05rem, 5.54vw + 3.17rem, 7rem);
     
   }
+
+
+#game-container {
+  background-color: red;
+  width: 100%;
+  min-height: 80svh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--mgc-gap-m);
+  flex-wrap: wrap;
+  padding: var(--mgc-padding-xl);  
+}

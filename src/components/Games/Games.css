@@ -1,0 +1,27 @@
+.game-div {
+
+    background-color: yellow;
+    width: 30%;
+    min-width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: var(--mgc-radius-m);
+}
+
+.game-title {
+    font-family: var(--mgc-funny-text);
+    font-size: var(--mgc-font-size-md);
+}
+
+.game-image {
+    font-size: var(--mgc-font-size-ultra);
+    transition: all 0.6s;
+    cursor: pointer;
+}
+
+.game-image:hover {
+    transform: scale(1.2);
+}
