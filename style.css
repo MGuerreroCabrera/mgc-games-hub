@@ -35,17 +35,20 @@
     --mgc-color-002: #a7a7a7;
     --mgc-color-003: #4f4f4f;
     --mgc-color-004: #171717;
+    --mgc-color-005: black;    
     
     /* Colors trivial */
-    --mgc-color-005: #00003c;
-    --mgc-color-006: #cc6900;
+    --mgc-color-006: #00003c;
+    --mgc-color-007: #cc6900;
 
     --mgc-white: var(--mgc-color-001);
     --mgc-light-grey: var(--mgc-color-002);
     --mgc-dark-grey: var(--mgc-color-003);
     --mgc-nearly-black: var(--mgc-color-004);
-    --mgc-dark-blue: var(--mcg-color-005);
-    --mgc-orange: var(--mgc-color-006);
+    --mgc-dark-blue: var(--mcg-color-006);
+    --mgc-orange: var(--mgc-color-007);
+    --mgc-black: var(--mgc-color-005);
+    --mgc-trivial-bgcolor: var(--mgc-color-006);
     
   
     /* Margins */
@@ -92,16 +95,16 @@
     --mgc-font-size-ultra: clamp(3.05rem, 5.54vw + 3.17rem, 7rem);
     
   }
-
+body {
+  background-color: var(--mgc-nearly-black);
+}
 
 #game-container {
-  background-color: red;
   width: 100%;
-  min-height: 80svh;
+  min-height: 90svh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: var(--mgc-gap-m);
   flex-wrap: wrap;
-  padding: var(--mgc-padding-xl);  
 }

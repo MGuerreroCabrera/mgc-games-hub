@@ -1,29 +1,17 @@
-import { cleanGameDiv } from "../../../main";
+import { games } from "../../../data/header/dataHeader";
+import { MemoryGame } from "../../../pages/MemoryGame/MemoryGame";
+import { TresEnRaya } from "../../../pages/TresEnRaya/TresEnRaya";
+import { Trivial } from "../../../pages/Trivial/Trivial";
+import { cleanDiv } from "../../functions/functions";
 import "./Games.css";
 
-// Array de juegos disponibles en la aplicación.
-const games = [
-    {
-        name: "TRIVIAL",
-        icon: "🤓"
-    },
-    {
-        name: "3 EN RAYA",
-        icon: "⭕️❌⭕️"
-    },
-    {
-        name: "MEMORY GAME",
-        icon: "🤔"
-    }
-];
 
 // Crear función que devuelve la capa gameContainer rellena.
 
 export const Games = (gameContainer) => {
     
     // Limpiar la capa gameContainer
-    gameContainer.innerHTML = ``;
-    
+    cleanDiv("game-container");
 
     // Recorrer el array de juegos
     for(let i = 0; i < games.length; i++) {
@@ -50,19 +38,39 @@ export const Games = (gameContainer) => {
         gameImage.className = "game-image";
 
         // Añadir contenido a la imagen del juego
-        gameImage.textContent = games[i].icon;
+        gameImage.textContent = games[i].icon;        
 
-        // Añadir escuchador de eventos para mostrar menú superior
+        // Añadir escuchador de eventos para mostrar menú superior        
         gameImage.addEventListener("click", () => {
             
             // Limpiar la capa contenedora del juego
-            cleanGameDiv();
+            cleanDiv("game-container");
 
             // Seleccionar el header
             const header = document.querySelector("#app-header");
 
             // Mostrar el menú superior
             header.style.marginTop = 0;
+
+            // Cargar la pantalla del juego
+            // Seleccionar la página a pintar
+            const pageToPrint = games[i].page;
+
+            // Pintar la página correspondiente al juego
+            switch (pageToPrint) {
+                case "TresEnRaya":
+                    TresEnRaya("Tres En Raya");
+                    break;
+                case "MemoryGame":
+                    MemoryGame("Memory Game");
+                    break;
+                case "Trivial":
+                    Trivial("Trivial");
+                    break;
+                default:
+                    break;
+            }
+
         });
 
         // Añadir título a la capa game-div

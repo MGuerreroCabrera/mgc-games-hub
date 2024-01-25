@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
     padding: var(--mgc-padding-l);
     transition: margin-top 0.8s;
 }
@@ -20,6 +19,8 @@
 }
 
 #app-header > ul > li > a {
+    cursor: pointer;
+    color: var(--mgc-orange);
     font-family: var(--mgc-funny-text);
     font-size: var(--mgc-font-size-lg);
 }

@@ -1,0 +1,23 @@
+#info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    min-height: 300px;
+    gap: var(--mgc-gap-l);
+    padding: var(--mgc-paddin-xl);
+    border-radius: var(--mgc-radius-l);
+    background-color: var(--mgc-white);
+}
+
+#info-container h2 {
+    font-family: var(--mgc-funny-text);
+    font-size: var(--mgc-font-size-lg);
+}
+
+#info-container p {
+    text-align: center;
+    font-family: var(--mgc-normal-text);
+    font-size: var(--mgc-font-size-base);
+}

@@ -1,0 +1,15 @@
+.generic-btn {
+    cursor: pointer;
+    border: 1px solid var(--mgc-orange);
+    transition: all 0.7s;
+    color: var(--mgc-white);
+    background-color: var(--mgc-orange);
+    padding: var(--mgc-padding-m) var(--mgc-padding-xl);
+    border-radius: var(--mgc-radius-xl);
+    font-size: var(--mgc-font-size-base);
+}
+
+.generic-btn:hover {
+    color: var(--mgc-orange);
+    background-color: var(--mgc-white);    
+}

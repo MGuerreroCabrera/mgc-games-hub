@@ -1,6 +1,4 @@
 .game-div {
-
-    background-color: yellow;
     width: 30%;
     min-width: 300px;
     height: 400px;
@@ -9,15 +7,17 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: var(--mgc-radius-m);
+    background-color: var(--mgc-black);
 }
 
 .game-title {
+    color: var(--mgc-orange);
     font-family: var(--mgc-funny-text);
-    font-size: var(--mgc-font-size-md);
+    font-size: var(--mgc-font-size-xl);
 }
 
 .game-image {
-    font-size: var(--mgc-font-size-ultra);
+    font-size: var(--mgc-font-size-xxxl);
     transition: all 0.6s;
     cursor: pointer;
 }

@@ -1,0 +1,16 @@
+
+.game-title-container {
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--mgc-gap-l);
+    padding: var(--mgc-padding-l);
+}
+
+.game-title-container > h2 {
+    font-family: var(--mgc-funny-text);
+    font-size: var(--mgc-font-size-md);
+    color: var(--mgc-white);
+}

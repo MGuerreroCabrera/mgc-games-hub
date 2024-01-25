@@ -1,0 +1,57 @@
+#game-themes {
+    padding: var(--mgc-padding-s) var(--mgc-padding-l);
+    font-family: var(--mgc-trivial-text);
+    font-size: var(--mgc-font-size-md);
+}
+
+/* Estilos para las cartas */
+.trivial-card {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--mgc-gap-s);
+    padding: var(--mgc-padding-xs);
+    background-color: var(--mgc-trivial-bgcolor);
+}
+
+.question-container {    
+    min-height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--mgc-padding-s);
+    background-color: var(--mgc-orange);
+}
+
+.question-container h3 {
+    font-weight: 800;
+    text-align: center;
+    color: var(--mgc-white);
+    font-family: var(--mgc-normal-text);
+    font-size: var(--mgc-font-size-base);
+}
+
+.answers-container {
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--mgc-padding-s);
+    background-color: var(--mgc-white);
+}
+
+.trivial-card label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 15%;    
+    background-color: var(--mgc-white);
+    padding: var(--mgc-padding-m);
+    color: var(--mgc-orange);
+    font-family: var(--mgc-normal-text);
+    font-size: var(--mgc-font-size-base);
+}

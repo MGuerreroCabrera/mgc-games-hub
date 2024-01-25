@@ -1,14 +1,22 @@
-export const navElements = [
+// Array de juegos disponibles
+export const games = [
     {
-        name: "Trivial",
-        path: "#"
+        name: "TRIVIAL",
+        icon: "🤓",
+        path: "#",
+        page: "Trivial"
     },
     {
-        name: "Tres en Raya",
-        path: "#"
+        name: "3 EN RAYA",
+        icon: "⭕️❌⭕️",
+        path: "#",
+        page: "TresEnRaya"
     },
     {
-        name: "Memory Game",
-        path: "#"
+        name: "MEMORY GAME",
+        icon: "🤔",
+        path: "#",
+        page: "MemoryGame"
     }
 ];
+
