@@ -1,3 +1,4 @@
+import { loadConfigFromFile } from "vite";
 import { gameThemes } from "../../data/trivial/dataTrivial";
 import { Board } from "../../src/components/Board/Borad";
 import { Button } from "../../src/components/Button/Button";
@@ -24,8 +25,11 @@ export const Trivial = (gameName) => {
     // Crear el Botón para iniciar la partida
     const initButton = Button("Iniciar Partida", "generic-btn");
 
+    // Recoger información del localStorage
+    const lastScore = localStorage.getItem("trivialScore");    
+   
     // Crear la capa info anterior del juego
-    const info = Info("Datos del juego", "No tienes datos registrados en este dispositivo de anteriores partidas", initButton);
+    const info = Info("Datos del juego", localStorage.getItem("trivialScore"), initButton, );
 
     // Inyectar la capa info del juego al gameContainer
     gameContainer.appendChild(info);
@@ -53,7 +57,7 @@ export const Trivial = (gameName) => {
         themesSelect.appendChild(firstOption);
 
         // Recorrer el array de temáticas
-        for(let i = 0; i < gameThemes.length; i++) {
+        for(let i = 0; i < gameThemes.length; i++) {          
 
             // Crear elemento HTML option para añadir al select
             const optionGame = document.createElement("option");
@@ -78,14 +82,22 @@ export const Trivial = (gameName) => {
         // Añadir escuchador de eventos para cambiar el tablero
         themesSelect.addEventListener("change", (e) => {
 
-            console.log(e.target.value);
+            // Seleccionar el tablero
+            const cleanBoard = document.querySelector("#board");
 
-            // Pintar partida
-            Board("#f7ecdd");
+            if(cleanBoard){
+                // Limpiar el tablero
+                cleanBoard.innerHTML = ``;
 
-            // Pintar las cartas
-            printCards(e.target.value);
+                // Pintar las cartas
+                printCards(e.target.value);
+            }else {
+                // Pintar partida
+                Board("#f7ecdd");
 
+                // Pintar las cartas
+                printCards(e.target.value);
+            }    
         });
 
     });

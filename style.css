@@ -108,3 +108,22 @@ body {
   gap: var(--mgc-gap-m);
   flex-wrap: wrap;
 }
+
+#result-game-container {
+  width: 500px;
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--mgc-gap-xl);
+  padding: var(--mgc-padding-l);
+  background-color: var(--mgc-white);
+  border-radius: var(--mgc-radius-m);
+}
+
+#result-game-container h3 {
+  font-family: var(--mgc-funny-text);
+  font-size: var(--mgc-font-size-md);
+  color: var(--mgc-nearly-black);
+} 

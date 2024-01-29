@@ -21,8 +21,18 @@ export const Info = (title, description, button) => {
     // Crear el elemento HTML para el texto del mensaje para el usuario
     const p = document.createElement("p");
 
+    // Crear variable para posibles mensajes
+    let mensaje = "";
+
+    // Crear posibles mensajes
+    if(description){
+        mensaje = `En la última partida tuviste ${lastScore} respuestas acertadas. Suerte en esta 🤞`;
+    }else{
+        mensaje = `No se han encontrado datos registrados de otras partidas en este dispositivo`;
+    }
+
     // Asignar contenido al elemento p
-    p.textContent = description;
+    p.textContent = mensaje;
 
     // Inyectar elementos creados en la capa infoContainer
     infoContainer.appendChild(infoTitle);

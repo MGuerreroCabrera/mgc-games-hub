@@ -1,3 +1,5 @@
+import { Trivial } from "../../pages/Trivial/Trivial";
+
 // Función que limpia la capa contenedora gameDiv
 export const cleanDiv = (idDiv) => {
     
@@ -11,3 +13,24 @@ export const cleanDiv = (idDiv) => {
     if(divToClean !== null) { divToClean.innerHTML = ""; }
 
 }
+
+export const initGame = (gameName) => {
+    // seleccionar el div #game-container
+    const gameContainer = document.querySelector("#game-container");
+    // vaciar el contenido del div
+    gameContainer.innerHTML = ``;
+
+    switch (gameName) {
+        case "Trivial":
+                // pintar la pantalla principal del trivial
+                Trivial("Trivial")           ;
+            break;
+        case "TresEnRaya":
+            break;
+        case "MemoryGame":
+            break;
+        default:
+            break;
+    }
+
+};
