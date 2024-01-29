@@ -22,17 +22,17 @@ export const Info = (title, description, button) => {
     const p = document.createElement("p");
 
     // Crear variable para posibles mensajes
-    let mensaje = "";
+    // let mensaje = "No se han encontrado datos registrados de otras partidas en este dispositivo";
 
     // Crear posibles mensajes
-    if(description){
-        mensaje = `En la última partida tuviste ${lastScore} respuestas acertadas. Suerte en esta 🤞`;
-    }else{
-        mensaje = `No se han encontrado datos registrados de otras partidas en este dispositivo`;
-    }
+    // if(description){
+    //     mensaje = `En la última partida tuviste ${lastScore} respuestas acertadas. Suerte en esta 🤞`;
+    // }else{
+    //     mensaje = `No se han encontrado datos registrados de otras partidas en este dispositivo`;
+    // }
 
     // Asignar contenido al elemento p
-    p.textContent = mensaje;
+    p.textContent = description;
 
     // Inyectar elementos creados en la capa infoContainer
     infoContainer.appendChild(infoTitle);

@@ -154,7 +154,7 @@ export const btValidate = (rightAnswers) => {
     resultGameContainer.appendChild(resultGame);
 
     // Añadir información del resultado de la partida en el LOCALSTORAGE
-    localStorage.setItem("trivialScore", COUNT);
+    //localStorage.setItem("trivialScore", COUNT);
 
     // Crear el botón de salir del juego
     const btLeave = Button("Salir del juego", "generic-btn");
