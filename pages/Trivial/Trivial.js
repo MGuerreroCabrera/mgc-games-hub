@@ -1,4 +1,3 @@
-import { loadConfigFromFile } from "vite";
 import { gameThemes } from "../../data/trivial/dataTrivial";
 import { Board } from "../../src/components/Board/Borad";
 import { Button } from "../../src/components/Button/Button";
@@ -26,10 +25,10 @@ export const Trivial = (gameName) => {
     const initButton = Button("Iniciar Partida", "generic-btn");
 
     // Recoger información del localStorage
-    //const lastScore = localStorage.getItem("trivialScore");    
+    const lastScore = localStorage.getItem("trivialScore");    
    
     // Crear la capa info anterior del juego
-    const info = Info("Datos del juego", "No se han encontrado datos registrados de otras partidas en este dispositivo" , initButton, );
+    const info = Info("Datos del juego", lastScore , initButton);
     // const info = Info("Datos del juego", localStorage.getItem("trivialScore"), initButton, );
 
     // Inyectar la capa info del juego al gameContainer
