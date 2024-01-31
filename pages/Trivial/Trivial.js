@@ -1,7 +1,6 @@
 import { gameThemes } from "../../data/trivial/dataTrivial";
 import { Board } from "../../src/components/Board/Borad";
 import { Button } from "../../src/components/Button/Button";
-import { GameHeader } from "../../src/components/GameHeader/GameHeader";
 import { GameTitle } from "../../src/components/GameTitle/GameTitle";
 import { Info } from "../../src/components/Info/Info";
 import { cleanDiv } from "../../src/functions/functions";

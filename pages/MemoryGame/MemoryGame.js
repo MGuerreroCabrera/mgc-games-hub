@@ -21,7 +21,7 @@ export const MemoryGame = (gameName) => {
     const initButton = Button("Iniciar Partida", "generic-btn");
 
     // Crear la capa info anterior del juego
-    const info = Info("Datos del juego", "No tienes datos registrados en este dispositivo de anteriores partidas", initButton);
+    const info = Info("Datos del juego", "" ,initButton);
 
     // Inyectar la capa info del juego al gameContainer
     gameContainer.appendChild(info);

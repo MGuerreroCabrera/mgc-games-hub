@@ -1,3 +1,4 @@
+import { TresEnRaya } from "../../pages/TresEnRaya/TresEnRaya";
 import { Trivial } from "../../pages/Trivial/Trivial";
 
 // Función que limpia la capa contenedora gameDiv
@@ -26,6 +27,7 @@ export const initGame = (gameName) => {
                 Trivial("Trivial")           ;
             break;
         case "TresEnRaya":
+                TresEnRaya("Tres En Raya");
             break;
         case "MemoryGame":
             break;

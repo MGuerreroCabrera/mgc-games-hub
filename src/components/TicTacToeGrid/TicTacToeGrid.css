@@ -1,0 +1,9 @@
+#tictactoe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 5px;
+    border: none;
+    padding: 0;
+    margin-top: -10%;
+    background-color: var(--mgc-light-grey);
+  }
