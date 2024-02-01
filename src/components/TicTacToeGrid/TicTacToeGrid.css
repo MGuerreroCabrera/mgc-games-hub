@@ -4,6 +4,33 @@
     grid-gap: 5px;
     border: none;
     padding: 0;
-    margin-top: -10%;
+    margin-top: -5%;
     background-color: var(--mgc-light-grey);
+}
+
+@media screen and (width <= 650px) {
+
+  #tictactoe-grid {
+    grid-template-columns: repeat(3, 150px);
+    margin-top: 10px;
   }
+
+}
+
+@media screen and (width <= 480px) {
+
+  #tictactoe-grid {
+    grid-template-columns: repeat(3, 120px);
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (width <= 390px) {
+
+  #tictactoe-grid {
+    grid-template-columns: repeat(3, 120px);
+    margin-top: 10px;
+  }
+
+}

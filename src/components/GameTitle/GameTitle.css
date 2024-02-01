@@ -30,3 +30,18 @@
     font-family: var(--mgc-funny-text);
     font-size: var(--mgc-font-size-xl);
 }
+
+@media screen and (max-width: 390px) {
+    .game-title-container > h2 {
+        font-size: var(--mgc-font-size-xxl);
+    }
+
+    #info-players {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--mgc-gap-m);
+        padding: var(--mgc-padding-sm);
+    }
+}

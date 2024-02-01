@@ -1,7 +1,9 @@
+import { Board } from "../../src/components/Board/Borad";
 import { Button } from "../../src/components/Button/Button";
-import { GameHeader } from "../../src/components/GameHeader/GameHeader";
 import { GameTitle } from "../../src/components/GameTitle/GameTitle";
-import { Info } from "../../src/components/Info/Info";
+import { infoMemory } from "../../src/components/Info/Info";
+import { cleanDiv } from "../../src/functions/functions";
+import { createMemoryGame } from "../../src/functions/memorygameFunctions";
 import "./MemoryGame.css";
 
 // Crear la función que pinte la página del MemoryGame
@@ -18,12 +20,32 @@ export const MemoryGame = (gameName) => {
     gameContainer.appendChild(titleGameContainer);
 
     // Crear el Botón para iniciar la partida
-    const initButton = Button("Iniciar Partida", "generic-btn");
+    const initButton = Button("Iniciar Partida", "generic-btn");    
+
+    // Recoger la variable del localStorage para el mensaje
+    const lastScore = localStorage.getItem("memoryShoot");
 
     // Crear la capa info anterior del juego
-    const info = Info("Datos del juego", "" ,initButton);
+    const info = infoMemory("Datos del juego", lastScore, initButton);
 
     // Inyectar la capa info del juego al gameContainer
     gameContainer.appendChild(info);
+
+    // Añadir escuchador de eventos al button para iniciar partida
+    initButton.addEventListener("click", () => {
+
+        // Vaciar el contenido de la capa gameContainer
+        cleanDiv("game-container");
+
+        // Añadir el título de nuevo        
+        gameContainer.appendChild(titleGameContainer);       
+
+        // Crear un tablero
+        Board("#171717");        
+
+        // Pintar partida
+        createMemoryGame();
+        
+    });
 
 }

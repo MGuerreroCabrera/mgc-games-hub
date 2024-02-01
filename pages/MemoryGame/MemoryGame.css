@@ -1,0 +1,53 @@
+/* Estilos CSS para las cartas y el tablero */
+#memory-game {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+    height: 50%;
+    gap: var(--mgc-gap-s);
+  }
+
+  .card {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--mgc-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--mgc-font-size-xxxl);
+    cursor: pointer;
+    perspective: 1000px; /* Agregar perspectiva para el efecto 3D */
+    transform-style: preserve-3d; /* Mantener el efecto 3D */
+    transition: transform 0.5s; /* Transición para el efecto de volteo */
+  }
+
+  .card.flipped {
+    transform: rotateY(180deg); /* Voltear la carta hacia atrás */
+  }
+
+  .card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .front {
+    transform: rotateY(180deg); /* Girar la cara frontal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: var(--mgc-nearly-black); /* Color de fondo para la parte frontal */
+  }
+
+  .back {
+    display: none; /* Inicialmente oculta */
+    align-items: center;
+    justify-content: center;
+    /*background-color: #000000; /* Color de fondo para la parte trasera */
+  }
+
+  .flipped .back {
+    display: flex; /* Mostrar la parte trasera cuando la carta está volteada */
+  }

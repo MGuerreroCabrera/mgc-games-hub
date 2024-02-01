@@ -127,3 +127,15 @@ body {
   font-size: var(--mgc-font-size-md);
   color: var(--mgc-nearly-black);
 } 
+
+@media screen and (max-width: 390px) {
+
+  /* #game-container {    
+    height: 0svh;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: var(--mgc-gap-m);
+    flex-wrap: wrap;
+  } */
+
+}

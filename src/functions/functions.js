@@ -1,3 +1,4 @@
+import { MemoryGame } from "../../pages/MemoryGame/MemoryGame";
 import { TresEnRaya } from "../../pages/TresEnRaya/TresEnRaya";
 import { Trivial } from "../../pages/Trivial/Trivial";
 
@@ -11,7 +12,11 @@ export const cleanDiv = (idDiv) => {
     const divToClean = document.querySelector(idDivToClean);
 
     // Limpiar el elemento seleccionado
-    if(divToClean !== null) { divToClean.innerHTML = ""; }
+    if(divToClean !== null) { 
+
+        divToClean.innerHTML = ""; 
+
+    }
 
 }
 
@@ -30,6 +35,7 @@ export const initGame = (gameName) => {
                 TresEnRaya("Tres En Raya");
             break;
         case "MemoryGame":
+                MemoryGame("Memory Game");
             break;
         default:
             break;

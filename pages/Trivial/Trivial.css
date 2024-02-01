@@ -57,11 +57,12 @@
 }
 
 .radio-button {
-    display: block;
+    display: none;
 }
 
-.radio-button:checked {
-    background-color: aqua;
+.radio-button:checked {    
+    display: block;
+    accent-color: var(--mgc-orange);
 }
 
 .card-form {

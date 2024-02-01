@@ -114,7 +114,7 @@ export const simpsonsQuestions = [
     },
     {
       pregunta: "¿Quién es el director de la escuela de Springfield?",
-      respuestas: ["Principal Skinner", "Superintendente Chalmers", "Sr. Burns", "Ned Flanders"],
+      respuestas: ["Principal Skinner", "Superintendente Chalmers", "Sr. Burns ", "Ned Flanders"],
       correcta: "Principal Skinner"
     }
   ];
@@ -132,8 +132,8 @@ export const dragonBallQuestions = [
     },
     {
       pregunta: "¿Quién es el príncipe de los Saiyan?",
-      respuestas: ["Vegeta", "Raditz", "Nappa", "Bardock"],
-      correcta: "Vegeta"
+      respuestas: ["Vegeta ", "Raditz", "Nappa", "Bardock"],
+      correcta: "Vegeta "
     },
     {
       pregunta: "¿Cuál es el nombre de la primera saga en Dragon Ball Z?",

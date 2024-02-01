@@ -1,9 +1,8 @@
 // Librería de funciones para el juego del 3 en Raya
 
-import { Board } from "../components/Board/Borad";
 import { Button } from "../components/Button/Button";
 import { TicTacToeGrid } from "../components/TicTacToeGrid/TicTacToeGrid";
-import { initGame } from "./functions";
+import { cleanDiv, initGame } from "./functions";
 
 export const printHeaderGame = () => {
 
@@ -123,7 +122,7 @@ export const printGame = () => {
 
                 // Añadir información del resultado de la partida
                 const resultGame = document.createElement("h3");
-                resultGame.textContent = `Esta intrépida partida la ganan ${currentPlayer}`;
+                resultGame.textContent = `Esta intrépida partida la gana ${currentPlayer}`;
 
                 // Añadir el texto con la info a la capa resultado
                 resultGameContainer.appendChild(resultGame);
@@ -175,10 +174,7 @@ export const printGame = () => {
             if (checkWinner()) {
             
                 // Seleccionar el tablero 
-                const board = document.querySelector("#board");
-
-                // Borrar el tablero
-                board.innerHTML = ``;
+                cleanDiv("#board");
 
                 // Crear la capa para el resultado del juego
                 const resultGameContainer =  document.createElement("div");

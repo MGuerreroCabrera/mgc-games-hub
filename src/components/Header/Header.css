@@ -24,3 +24,14 @@
     font-family: var(--mgc-funny-text);
     font-size: var(--mgc-font-size-lg);
 }
+
+/* Tamaño smartphone */
+@media screen and (max-width: 390px) { 
+    #app-header {
+        margin-top: 10px;
+    }
+    #app-header > ul > li > a {
+        font-size: var(--mgc-font-size-base);
+    }
+    
+}

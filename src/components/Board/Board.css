@@ -1,10 +1,16 @@
 #board {
     width: 100%;
-    MIN-height: 80svh;
+    min-height: 80svh;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: var(--mgc-gap-l);
     padding: var(--mgc-padding-l);
+}
+
+@media screen and (width <= 390px) {
+    #board {
+        justify-content: flex-start;
+    }
 }

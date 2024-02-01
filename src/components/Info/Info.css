@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
+    max-width: 390px;
     min-height: 300px;
     gap: var(--mgc-gap-l);
     padding: var(--mgc-paddin-xl);
@@ -12,6 +12,7 @@
 }
 
 #info-container h2 {
+    text-align: center;
     font-family: var(--mgc-funny-text);
     font-size: var(--mgc-font-size-lg);
 }
@@ -20,4 +21,12 @@
     text-align: center;
     font-family: var(--mgc-normal-text);
     font-size: var(--mgc-font-size-base);
+}
+
+@media screen and (max-width: 390px) {
+
+    #info-container {
+        max-width: 360px;
+    }
+
 }
